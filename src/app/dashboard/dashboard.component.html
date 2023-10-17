@@ -1,0 +1,19 @@
+<mat-drawer-container class="dashboard-container" >
+    <mat-drawer mode="side" class="dashboard-sidebar" [opened]="isSidenavOpen" >
+        <app-sidenav></app-sidenav>
+    </mat-drawer>
+  
+    <mat-drawer-content>
+      <app-toolbar  (toggleSidebar)="isSidenavOpen = !isSidenavOpen" ></app-toolbar>
+      <!-- Contenido principal de la página aquí -->
+      <main style="padding: 2rem">
+        <!-- PAGINA -->
+        <!-- <app-forms></app-forms> -->
+        <router-outlet></router-outlet>
+  
+        <!-- <button (click)="showHome = !showHome">Mostrar home</button> -->
+        <!-- <app-home *ngIf="showHome"></app-home> -->
+      </main>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  

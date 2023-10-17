@@ -1,0 +1,10 @@
+<h1 appFontSize20>Listado de Alumnos y Calificaciones</h1>
+
+<button (click)="openAlumnoDialog()" class="mb-3" mat-flat-button color="primary">
+    <mat-icon>add</mat-icon>
+    Crear Alumno
+</button>
+
+<app-alumnos-table
+[dataSource]="alumnos"
+></app-alumnos-table>

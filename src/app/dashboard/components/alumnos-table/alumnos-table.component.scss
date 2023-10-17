@@ -1,0 +1,19 @@
+/* Agrega este CSS en tu archivo de estilos SCSS o CSS */
+
+/* 1. Ajustar el espaciado en las celdas */
+.mat-cell {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* 2. Ajustar el estilo de las celdas */
+  .mat-cell {
+    white-space: nowrap; /* Evita el ajuste de texto automático */
+    overflow: hidden; /* Oculta el contenido que desborde */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos para texto que desborde */
+  }
+  
+  /* 3. Ajustar el espacio de la columna "curso" */
+  .mat-column-curso {
+    flex: 1;
+  }
